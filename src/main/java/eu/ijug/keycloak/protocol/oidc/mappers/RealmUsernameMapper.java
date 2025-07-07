@@ -51,7 +51,7 @@ public class RealmUsernameMapper extends AbstractOIDCProtocolMapper
 
 	@Override
 	public int getPriority() {
-		return super.getPriority();
+		return super.getPriority() + 10;
 	}
 
 	@Override
