@@ -1,7 +1,7 @@
 services:
   keycloak:
-    container_name: kc_customer
-    image: quay.io/keycloak/keycloak:26.3
+    container_name: ijug_kc
+    image: quay.io/keycloak/keycloak:26.1
     command: start-dev --import-realm
     environment:
       DEBUG: 'true'
@@ -19,13 +19,13 @@ services:
       - ./target/keycloak-extensions.jar:/opt/keycloak/providers/extensions.jar
   mail:
     # UI: http://localhost:8025
-    container_name: mail_customer
+    container_name: ijug_mail
     image: axllent/mailpit:latest
     ports:
       - "8025:8025"
   mockserver:
     # UI: http://localhost:1080/mockserver/dashboard
-    container_name: mock_customer
+    container_name: ijug_mock
     image: mockserver/mockserver:latest
     ports:
       - "1080:1080"
@@ -37,4 +37,4 @@ services:
 
 volumes:
   kc_data:
-    name: customer-data
+    name: ijug-kc-data
