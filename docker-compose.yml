@@ -1,7 +1,7 @@
 services:
   keycloak:
     container_name: ijug_kc
-    image: quay.io/keycloak/keycloak:26.1
+    image: quay.io/keycloak/keycloak:26.3
     command: start-dev --import-realm
     environment:
       DEBUG: 'true'
