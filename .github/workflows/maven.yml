@@ -15,7 +15,7 @@ on:
 
 env:
   REGISTRY: ghcr.io
-  IMAGE_NAME: ${{ env.REGISTRY }}/ijug-ev/keycloak
+  IMAGE_NAME: ghcr.io/ijug-ev/keycloak
 
 jobs:
   build:
