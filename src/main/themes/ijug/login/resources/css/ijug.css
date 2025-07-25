@@ -1,0 +1,25 @@
+.login-pf body {
+	background: #f5f5f5;
+}
+
+.pf-v5-c-login__header {
+	margin-block-start: 0;
+}
+
+div.logo-text {
+	background-image: url(../img/logo_ijug-verbund.png);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	height: 92px;
+	width: 200px;
+	margin: 0 auto;
+	transform: translateX(-25px);
+}
+div.logo-text span {
+	display: none;
+}
+
+.footer {
+	padding-bottom: var(--pf-v5-global--spacer--lg) !important;
+}

@@ -17,6 +17,7 @@ services:
       - kc_data:/opt/keycloak/data
       - ./src/test/resources/test-realm.json:/opt/keycloak/data/import/test-realm.json
       - ./target/keycloak-extensions.jar:/opt/keycloak/providers/extensions.jar
+      - ./src/main/themes:/opt/keycloak/themes
   mail:
     # UI: http://localhost:8025
     container_name: ijug_mail
