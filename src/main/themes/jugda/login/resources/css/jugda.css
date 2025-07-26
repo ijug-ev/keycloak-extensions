@@ -1,0 +1,24 @@
+.login-pf body {
+	background: var(--pf-v5-global--BackgroundColor--200);
+}
+
+.pf-v5-c-login__header {
+	margin-block-start: 0;
+}
+
+div.logo-text {
+	background-image: url(../img/jugda_logo_rund_transparent.png);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	height: 216px;
+	width: 202px;
+	margin: 0 auto;
+}
+div.logo-text span {
+	display: none;
+}
+
+.footer {
+	padding-bottom: var(--pf-v5-global--spacer--lg) !important;
+}
