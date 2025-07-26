@@ -5,7 +5,7 @@
 			<select id="login-select-toggle" onchange="selectIdP(this)">
 				<option value="">${kcSanitize(msg("identity-provider-login-label"))}</option>
 				<#list social.providers as p>
-					<option value="${p.loginUrl}">
+					<option value="${p.alias}" data-url="${p.loginUrl}">
 						${p.displayName}
 					</option>
 				</#list>
