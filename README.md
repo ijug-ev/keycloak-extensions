@@ -3,7 +3,7 @@
 ## General
 
 These custom extensions are based on
-![](https://img.shields.io/badge/Keycloak-26.3-blue)
+![](https://img.shields.io/badge/Keycloak-26.4-blue)
 ![](https://img.shields.io/badge/Java-21-f89820)
 
 ### Building the Binaries
@@ -27,22 +27,3 @@ If you start Keycloak regularly, an implicit build will be performed.
 See [Keycloak Docs](https://www.keycloak.org/docs) and [Keycloak Guides](https://www.keycloak.org/guides) for more info.
 
 ## Extensions
-
-### Realm-Username Protocol Token Mapper
-
-This OIDC protocol token mapper maps the username with a realm-name extension in the format
-
-    username_realmname
-
-to a claim of the token(s).  
-The claim name can be configured, default value is `preferred_username`.
-
-![](img/realm-username-mapper.png)
-
-This mapper has a higher priority value than the regular username mapper, so this mapper will always supersede the default mapper value.
-
-If you need this special username format in just one or some clients, you can add the mapper as a dedicated mapper in each client:
-
-`Client` ➡ `Client scopes` ➡ `<clientId>-dedicated` ➡ `Mappers`
-
-If you want this username format to occur for all of your clients, just add it to the default _Client Scope_ `profile` as an additional mapper.

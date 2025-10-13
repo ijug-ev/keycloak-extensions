@@ -1,11 +1,11 @@
 services:
   keycloak:
     container_name: ijug_kc
-    image: quay.io/keycloak/keycloak:26.3
+    image: quay.io/keycloak/keycloak:26.4
     command: start-dev --import-realm
     environment:
       DEBUG: 'true'
-      DEBUG_PORT: '*:8787'
+      DEBUG_PORT: '8787'
       KC_BOOTSTRAP_ADMIN_USERNAME: admin
       KC_BOOTSTRAP_ADMIN_PASSWORD: admin
       KC_SPI_EVENTS_LISTENER_JBOSS_LOGGING_SUCCESS_LEVEL: info
