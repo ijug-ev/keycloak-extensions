@@ -3,7 +3,7 @@
 ## General
 
 These custom extensions are based on
-![](https://img.shields.io/badge/Keycloak-26.4-blue)
+![](https://img.shields.io/badge/Keycloak-26.5-blue)
 ![](https://img.shields.io/badge/Java-21-f89820)
 
 ### Building the Binaries
