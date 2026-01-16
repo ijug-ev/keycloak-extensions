@@ -9,7 +9,7 @@ services:
       KC_BOOTSTRAP_ADMIN_USERNAME: admin
       KC_BOOTSTRAP_ADMIN_PASSWORD: admin
       KC_SPI_EVENTS_LISTENER__JBOSS_LOGGING__SUCCESS_LEVEL: info
-      KC_SPI_THEME_WELCOME_THEME: ijug
+      KC_SPI_THEME__WELCOME_THEME: ijug
       KC_LOG_LEVEL: INFO,de.keycloak:debug
     ports:
       - "8080:8080"
