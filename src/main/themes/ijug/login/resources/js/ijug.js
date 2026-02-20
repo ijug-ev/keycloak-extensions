@@ -22,7 +22,7 @@ function selectIdPFromLocalStorage() {
 	const storedAlias = window.localStorage.getItem(LOCAL_STORAGE_KEY);
 	if (storedAlias) {
 		selectIdPFromAlias(storedAlias);
-		const select = document.getElementById('login-select-toggle');
+		const select = document.getElementById('jug-select');
 		select.value = storedAlias;
 	}
 }
