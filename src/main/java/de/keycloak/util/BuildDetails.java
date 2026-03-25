@@ -1,9 +1,5 @@
 package de.keycloak.util;
 
-import org.keycloak.authentication.actiontoken.TokenUtils;
-
-import java.io.IOException;
-import java.io.ObjectStreamClass;
 import java.time.ZoneOffset;
 import java.time.ZonedDateTime;
 import java.time.format.DateTimeFormatter;
@@ -11,14 +7,14 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 import java.util.Objects;
-import java.util.stream.Collectors;
 
 public class BuildDetails {
 
 	private static final List<String> propertyNames = List.of("git.branch", "git.build.time", "git.build.version", "git.commit.id.abbrev");
 
-	public static Map<String, String> get() {
+	public static Map<String, String> get(Class<?> clazz) {
 		Map<String, String> buildDetails = new HashMap<>();
+		buildDetails.put("class", clazz.getCanonicalName());
 		java.util.Properties gitProperties = new java.util.Properties();
 		try {
 			gitProperties.load(Objects.requireNonNull(BuildDetails.class.getClassLoader().getResourceAsStream("git.properties")));
