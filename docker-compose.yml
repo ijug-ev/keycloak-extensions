@@ -25,17 +25,6 @@ services:
     image: axllent/mailpit:latest
     ports:
       - "8025:8025"
-  mockserver:
-    # UI: http://localhost:1080/mockserver/dashboard
-    container_name: ijug_mock
-    image: mockserver/mockserver:latest
-    ports:
-      - "1080:1080"
-    environment:
-      MOCKSERVER_LOG_LEVEL: ERROR
-      MOCKSERVER_INITIALIZATION_JSON_PATH: /config/expectations.json
-    volumes:
-      - ./mockserver-expectations.json:/config/expectations.json
 
 volumes:
   kc_data:
