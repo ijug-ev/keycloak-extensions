@@ -23,9 +23,7 @@ public class StartRealmResourceProviderTest extends TestBase {
 
 	@BeforeAll
 	static void setup() {
-		initTestRealm(keycloak, "ijug", realm -> {
-			realm.setLoginTheme("ijug");
-		}, null);
+		initTestRealm(keycloak, "ijug", realm -> realm.setLoginTheme("ijug"), null);
 		initTestRealm(keycloak, "test", null, null);
 	}
 
