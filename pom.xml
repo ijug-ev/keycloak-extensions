@@ -9,11 +9,10 @@
 	<version>1.0.7</version>
 
 	<properties>
-		<git-commit-id.version>9.1.0</git-commit-id.version>
-		<keycloak.version>26.5.3</keycloak.version><!-- for kc dependencies, it's ok to stick with the .0 patch version (most of the time) -->
+		<git-commit-id.version>10.0.0</git-commit-id.version>
+		<keycloak.version>26.6.0</keycloak.version><!-- for kc dependencies, it's ok to stick with the .0 patch version (most of the time) -->
 		<maven.compiler.release>21</maven.compiler.release>
 		<maven.compiler.version>3.15.0</maven.compiler.version>
-		<maven.shade.version>3.6.1</maven.shade.version>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 	</properties>
 
@@ -98,33 +97,6 @@
 				<artifactId>maven-compiler-plugin</artifactId>
 				<version>${maven.compiler.version}</version>
 			</plugin>
-			<!--plugin>
-				<groupId>org.apache.maven.plugins</groupId>
-				<artifactId>maven-shade-plugin</artifactId>
-				<version>${maven.shade.version}</version>
-				<configuration>
-					<createDependencyReducedPom>false</createDependencyReducedPom>
-					<filters>
-						<filter>
-							<artifact>*:*</artifact>
-							<excludes>
-								<exclude>META-INF/*.MF</exclude>
-								<exclude>META-INF/*.SF</exclude>
-								<exclude>META-INF/*.DSA</exclude>
-								<exclude>META-INF/*.RSA</exclude>
-							</excludes>
-						</filter>
-					</filters>
-				</configuration>
-				<executions>
-					<execution>
-						<phase>package</phase>
-						<goals>
-							<goal>shade</goal>
-						</goals>
-					</execution>
-				</executions>
-			</plugin-->
 			<plugin>
 				<groupId>io.github.git-commit-id</groupId>
 				<artifactId>git-commit-id-maven-plugin</artifactId>
