@@ -1,4 +1,4 @@
-FROM quay.io/keycloak/keycloak:26.6.0
+FROM quay.io/keycloak/keycloak:26.6.1
 LABEL maintainer="iJUG e.V."
 
 # build-time props
