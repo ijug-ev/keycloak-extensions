@@ -6,7 +6,7 @@
 
 	<groupId>eu.ijug.keycloak</groupId>
 	<artifactId>keycloak-extensions</artifactId>
-	<version>1.0.7</version>
+	<version>1.0.8</version>
 
 	<properties>
 		<git-commit-id.version>10.0.0</git-commit-id.version>
