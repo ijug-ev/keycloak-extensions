@@ -1,0 +1,15 @@
+.login-pf body {
+	background: var(--pf-v5-global--BackgroundColor--200);
+}
+
+.pf-v5-c-login__header {
+	margin-block-start: 0;
+}
+
+.footer {
+	padding-bottom: var(--pf-v5-global--spacer--lg) !important;
+}
+
+#kc-header-wrapper {
+	color: var(--pf-v5-global--Color--dark-100) !important;
+}
