@@ -9,6 +9,7 @@ updates:
   # Maintain dependencies for GitHub Actions
   - package-ecosystem: "github-actions"
     directory: "/"
+    open-pull-requests-limit: 99
     schedule:
       interval: "weekly"
     assignees:
@@ -20,7 +21,7 @@ updates:
   # Maintain dependencies for maven
   - package-ecosystem: "maven"
     directory: "/"
-    open-pull-requests-limit: 10
+    open-pull-requests-limit: 99
     schedule:
       interval: "weekly"
     assignees:
