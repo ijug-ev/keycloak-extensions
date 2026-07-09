@@ -1,11 +1,10 @@
-FROM quay.io/keycloak/keycloak:26.6.4
+FROM quay.io/keycloak/keycloak:26.7.0
 LABEL maintainer="iJUG e.V."
 
 # build-time props
 ARG KC_DB=postgres
 ARG KC_HEALTH_ENABLED=true
 ARG KC_SPI_THEME__WELCOME_THEME=ijug
-ARG KC_FEATURES_DISABLED=admin-fine-grained-authz,authorization,ciba,impersonation,kerberos,log-mdc,step-up-authentication
 
 # Copy build relevant resources
 COPY ./target/keycloak-extensions.jar /opt/keycloak/providers/keycloak-extensions.jar
