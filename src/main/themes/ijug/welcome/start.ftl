@@ -43,7 +43,7 @@
 							<select id="jug-select" onchange="selectIdP(this)">
 								<option value="">Bitte wähle Deine JUG:</option>
 								<#list jugs as p>
-									<option value="${p.alias}" data-url="/realms/${p.alias}/account/">${p.displayName}</option>
+									<option value="${p.alias}" data-url="${p.config.issuer}/account/">${p.displayName}</option>
 								</#list>
 							</select>
 							<span class="pf-v5-c-form-control__utilities">
