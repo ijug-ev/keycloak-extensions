@@ -6,13 +6,13 @@
 
 	<groupId>eu.ijug.keycloak</groupId>
 	<artifactId>keycloak-extensions</artifactId>
-	<version>1.0.9</version>
+	<version>1.0.10</version>
 
 	<properties>
-		<git-commit-id.version>10.0.0</git-commit-id.version>
+		<git-commit-id.version>10.0.1</git-commit-id.version>
 		<keycloak.version>26.8.0</keycloak.version><!-- for kc dependencies, it's ok to stick with the .0 patch version (most of the time) -->
 		<maven.compiler.release>21</maven.compiler.release>
-		<maven.compiler.version>3.15.0</maven.compiler.version>
+		<maven.compiler.version>3.16.0</maven.compiler.version>
 		<maven.surefire.version>3.6.0</maven.surefire.version>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 	</properties>
@@ -81,14 +81,6 @@
 			<artifactId>slf4j-reload4j</artifactId>
 		</dependency>
 	</dependencies>
-
-	<distributionManagement>
-		<repository>
-			<id>github</id>
-			<name>GitHub Packages</name>
-			<url>https://maven.pkg.github.com/ijug-ev/keycloak-extensions</url>
-		</repository>
-	</distributionManagement>
 
 	<build>
 		<finalName>${project.artifactId}</finalName>
