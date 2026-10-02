@@ -18,7 +18,7 @@ import static org.hamcrest.Matchers.not;
 public class StartRealmResourceProviderTest extends TestBase {
 
 	@Container
-	private static final KeycloakContainer keycloak = new KeycloakContainer("quay.io/keycloak/keycloak:latest")
+	private static final KeycloakContainer keycloak = new KeycloakContainer("quay.io/keycloak/keycloak:" + System.getProperty("keycloak.version", "latest"))
 		.withFileSystemBind("src/main/themes/ijug", "/opt/keycloak/themes/ijug", BindMode.READ_ONLY)
 		.withEnv("KC_SPI_THEME__WELCOME_THEME", "ijug")
 		.withDefaultProviderClasses();
