@@ -4,7 +4,9 @@
 
 These custom extensions are based on
 ![](https://img.shields.io/badge/Keycloak-26.8-blue)
-![](https://img.shields.io/badge/Java-21-f89820)
+![](https://img.shields.io/badge/Java-21-f89820)  
+Current container image: 
+[![ghcr.io/ijug-ev/keycloak](https://ghcr-badge.egpl.dev/ijug-ev/keycloak/latest_tag?label=ghcr.io/ijug-ev/keycloak)](https://github.com/ijug-ev/keycloak-extensions/pkgs/container/keycloak)
 
 ### Building the Binaries
 
