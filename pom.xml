@@ -13,7 +13,7 @@
 		<keycloak.version>26.8.0</keycloak.version><!-- for kc dependencies, it's ok to stick with the .0 patch version (most of the time) -->
 		<maven.compiler.release>21</maven.compiler.release>
 		<maven.compiler.version>3.16.0</maven.compiler.version>
-		<maven.surefire.version>3.6.0</maven.surefire.version>
+		<maven.surefire.version>3.6.1</maven.surefire.version>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 	</properties>
 
